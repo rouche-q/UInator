@@ -1,0 +1,46 @@
+.uinator-button {
+    --btn-background: black;
+    --btn-font-color: white;
+    --btn-border-color: black;
+
+    display: inline-flex;
+    padding: 0 23.5px;
+    font-size: 16px;
+    border-radius : 4px;
+    height: 48px;
+    letter-spacing: 0.6px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--btn-background);
+    color: var(--btn-font-color);
+    outline: none;
+    border: 2px solid var(--btn-border-color);
+    box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.3);
+}
+
+.uinator-button:active {
+    transform: scale(0.98);
+}
+
+.uinator-button.primary {
+    --btn-background: black;
+    --btn-font-color: white;
+}
+
+.uinator-button.inverted {
+    --btn-border-color: var(--btn-background);
+    background-color: var(--btn-font-color);
+    color: var(--btn-background);
+}
+
+.uinator-button.green {
+    --btn-background: green;
+    --btn-font-color: white;
+    --btn-border-color: green;
+}
+
+.uinator-button.red {
+    --btn-background: red;
+    --btn-font-color: white;
+    --btn-border-color: red;
+}
